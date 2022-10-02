@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#body {
+  position: relative;
+  /* background-color: blanchedalmond; */
+  background-image: url("5.jpg");
+  background-size: cover;
+}
+
+#gadza {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content:hover #container {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 260px;
+}
+#container {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 8%;
+  overflow: hidden;
+  /* width: 100%;
+  height: 260px; */
+}
+
+.content:hover .image img {
+  width: 450px;
+  height: 380px;
+}
+.image img {
+  width: 230px;
+  height: 350px;
+  object-fit: cover;
+}
+.content:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 8%;
+  overflow: hidden;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+.content:hover .cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+}
+.profile {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.content:hover .profile {
+  transform: translateY(-110px);
+  transition: 2s;
+}
+.content:hover .profil-info {
+  transform: translateY(-130px);
+  transition: 2s;
+}
+
+.profil-info {
+  position: absolute;
+  left: 20px;
+  bottom: -90px;
+  font-weight: bold;
+  color: white;
+}
+.cv {
+  margin-top: 20px;
+}
+.profil-info a {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(181, 48, 48);
+  opacity: 0.9;
+  padding: 4px;
+  border-radius: 5px;
+}
+.profil-info a:hover {
+  background-color: rgb(136, 67, 67);
+}
