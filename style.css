@@ -168,7 +168,7 @@
   left: 0;
   background-color: rgb(209, 24, 24);
   z-index: -1;
-  transform: scaleX(0.01);
+  transform: scaleX(0);
   transform-origin: left;
   transition: 250ms ease-in-out;
 }
