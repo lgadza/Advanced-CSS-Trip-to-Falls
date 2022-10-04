@@ -128,3 +128,68 @@
 .profil-info a:hover {
   background-color: rgb(136, 67, 67);
 }
+
+/* TODO */
+#info {
+  width: 50%;
+  height: 20vh;
+  background-color: black;
+  opacity: 0.6;
+  margin-top: 30vh;
+  color: white;
+  margin-left: 20%;
+  display: block;
+  /* text-align: center; */
+  /* display: flex;
+  justify-content: center; */
+}
+#name {
+  font-size: 2em;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: relative;
+  z-index: 1;
+  /* height: 10px; */
+}
+#love {
+  padding-left: 40px;
+  position: relative;
+  z-index: 1;
+  color: black;
+  font-size: 1.3em;
+}
+#name::after {
+  content: "";
+  position: absolute;
+  height: calc(100% - 10px);
+  width: 50%;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(209, 24, 24);
+  z-index: -1;
+  transform: scaleX(0.01);
+  transform-origin: left;
+  transition: 250ms ease-in-out;
+}
+/* #info:hover  */
+#love::after {
+  content: "";
+  position: absolute;
+  height: calc(100%);
+  width: 60%;
+  top: 0px;
+  bottom: 0;
+  left: 30px;
+  background-color: rgb(255, 255, 255);
+  z-index: -3;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 250ms ease-in-out 250ms;
+}
+#info:hover #love::after {
+  transform: scaleX(50%);
+}
+#info:hover #name::after {
+  transform: scaleX(50%);
+}
